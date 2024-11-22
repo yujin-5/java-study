@@ -54,5 +54,27 @@ public class ArrayBasic {
         pets = new String[] {"어흥이","냠냠이"}; //배열 값 추가할 때는 new String[] 생략하면 안 됨
         System.out.println(Arrays.toString(pets));
 
+        //배열의 기본 값
+        //자바의 배열은 생성되는 순간 해당 공간에 기본값들을 채워넣음
+        //정수형: 0
+        //실수형: 0.0
+        //논리형: false
+        //문자형: ''
+        //기타(String 포함): null
+        System.out.println("========================");
+        int[] points = new int[4];
+        double[] dArr = new double[3];
+        boolean[] bArr = new boolean[3];
+        char[] cArr = new char[3];
+        String[] sArr = new String[3];
+        System.out.println(points.length); //공간을 지정하는 순간 길이 정해짐
+        System.out.println(Arrays.toString(points)); //[0,0,0,0]
+        System.out.println(Arrays.toString(dArr)); //[0.0,0.0,0.0]
+        System.out.println(Arrays.toString(bArr)); //[false, false, false]
+        System.out.println(Arrays.toString(cArr)); //
+        System.out.println(Arrays.toString(sArr)); //[null, null, null]
+
+        Math[] maths = new Math[3];
+        System.out.println(Arrays.toString(maths)); //[null, null, null]
     }
 }
