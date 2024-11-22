@@ -15,7 +15,7 @@ public class ArraySearch {
                 break;
             }
         } //end for
-        boolean isPresent = index != -1;
+        boolean isPresent = index != -1; //인덱스가 -1이 아니면 존재하는 것임
         System.out.println("target의 인덱스: " + index);
         System.out.println("target의 유무: " + isPresent);
     }
