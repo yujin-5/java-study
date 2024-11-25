@@ -67,10 +67,6 @@ public class MethodQuiz {
         }
     }
 
-    static String[] insert(int startIndex, String food){
-
-    }
-
 
     public static void main(String[] args) {
         printFoods();
