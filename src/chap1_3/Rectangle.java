@@ -4,17 +4,18 @@ public class Rectangle {
     int width;
     int height;
 
-    Rectangle(){
-        width = 10;
-        height = 10;
+    //생성자
+    Rectangle(int w, int h){
+        width = w;
+        height =h;
     }
 
-    void calculateArea(){
-        System.out.println(width*height);
+    int calculateArea(){
+        return width*height;
     }
 
-    void calculatePerimeter(){
-        System.out.println(2*(width+height));
+    int calculatePerimeter(){
+        return (width + height) * 2;
     }
 
 }
