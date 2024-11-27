@@ -6,19 +6,19 @@ public class Employee {
     int salary;
 
     //생성자
-    public Employee(){
+    Employee(){
         name = "홍길동";
         position = "사장";
         salary = 10000000;
     }
 
-    public Employee(String name, String position, int salary){
+    Employee(String name, String position, int salary){
         this.name= name;
         this.position = position;
         this.salary = salary;
     }
 
-    public Employee(String name, String position){
+    Employee(String name, String position){
         this(name, position, 2000000);
     }
 

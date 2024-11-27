@@ -7,6 +7,5 @@ public class EmployeeMain {
 
          Employee lee=new Employee("이둘리","사원",1800000);
          lee.displayEmployeeInfo();
-
     }
 }
