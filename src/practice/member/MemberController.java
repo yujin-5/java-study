@@ -38,10 +38,42 @@ public class MemberController {
         } else { //이메일 못 찾음
             System.out.println("\n#조회 결과가 없습니다.");
         }
-
-
     }
 
+    //4번 비밀번호를 변경하는 메서드
+    void changePassword(){
+        String email = prompt("# 수정 대상의 이메일: ");
+
+        //조회 대상을 탐색하고 탐색 성공시 해당 객체를 받아옴
+        Member foundMember = mr.findMemberByEmail(email);
+        if(foundMember != null){ //이메일 찾음
+            System.out.printf("# %s님의 비밀번호를 변경합니다.", foundMember.memberName);
+            String newPassword = prompt("\n# 새로운 비밀번호: ");
+            foundMember.password = newPassword;
+            System.out.println("# 비밀번호 변경이 완료되었습니다.");
+        } else{ //이메일 못 찾음
+
+        }
+    }
+
+    //5번 회원 정보를 삭제하는 메서드
+    void deleteMember(){
+        String email = prompt("# 삭제 대상의 이메일: ");
+        Member foundMember = mr.findMemberByEmail(email);
+        //이메일 없음
+        if(foundMember != null){ //이메일 있음
+            String checkPassword = prompt("# 비밀번호: ");
+            if(checkPassword.equals(foundMember.password)){
+                mr.deleteMember(foundMember);
+                System.out.println("# 회원 탈퇴가 처리되었습니다. 복구하시려면 복구메뉴를 이용하세요.");
+            } else{
+                System.out.println("# 비밀번호가 일치하지 않습니다.");
+            }
+        } else {
+            System.out.println("# 조회 결과가 없습니다.");
+        }
+
+    }
 
     //프로그램을 실행하는 메서드
     void start(){
@@ -58,6 +90,12 @@ public class MemberController {
                     break;
                 case "3":
                     showDetails();
+                    break;
+                case "4":
+                    changePassword();
+                    break;
+                case "5":
+                    deleteMember();
                     break;
                 case "7":
                     System.out.println("프로그램 종료하기!");
@@ -124,7 +162,7 @@ public class MemberController {
     void showAllmembers(){
         //전체 회원정보 가져옴
         Member[] members = mr.getMembers();
-        System.out.println("\n======전체 회원 정보======");
+        System.out.println("\n======현재 회원 정보 ( 총 " + members.length + "명 ) ======");
         for (Member m : members) {
             m.inform();
         }
