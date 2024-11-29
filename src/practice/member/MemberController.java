@@ -50,9 +50,11 @@ public class MemberController {
             System.out.printf("# %s님의 비밀번호를 변경합니다.", foundMember.memberName);
             String newPassword = prompt("\n# 새로운 비밀번호: ");
             foundMember.password = newPassword;
+            //MemberRepository에서 함수 생성 후 호출하지 않고 바로 코드 입력하면
+            //기능 상으로 동일한데 객체 지향 시스템에선 올바른 코드로 보지 않음
             System.out.println("# 비밀번호 변경이 완료되었습니다.");
         } else{ //이메일 못 찾음
-
+            System.out.println("# 조회 결과가 없습니다.");
         }
     }
 
