@@ -1,6 +1,6 @@
-package Chap1_6.modi.pac2;
+package chap1_6.modi.pac2;
 
-import Chap1_6.modi.pac1.A;
+import chap1_6.modi.pac1.A;
 
 public class C {
 

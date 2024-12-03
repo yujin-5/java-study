@@ -1,4 +1,4 @@
-package Chap1_6;
+package chap1_6;
 
 public class MyCar {
 

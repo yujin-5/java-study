@@ -1,4 +1,4 @@
-package Chap1_6.modi.pac1;
+package chap1_6.modi.pac1;
 
 public class B {
 

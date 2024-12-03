@@ -1,4 +1,4 @@
-package Chap1_6.modi.pac1;
+package chap1_6.modi.pac1;
 
 //class에는 접근제한을 public과 default만 적용할 수 있음
 //default 적용 시 내부 퍼플릭을 주지 않겠다는 의미

@@ -1,4 +1,4 @@
-package Chap1_6.practice;
+package chap1_6.practice;
 
 public class LibraryMember {
 
@@ -20,6 +20,7 @@ public class LibraryMember {
     void borrowBook(){
         if(borrowedBooks > 5){
             System.out.println("대여 가능 권수를 초과했습니다.");
+            return;
         } else {
             borrowedBooks++;
             System.out.println("대여 성공!");
@@ -28,9 +29,8 @@ public class LibraryMember {
 
     void returnBook(){
         borrowedBooks--;
+        System.out.println("반납 성공!");
     }
-
-
 
 
 }
