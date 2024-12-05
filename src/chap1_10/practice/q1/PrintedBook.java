@@ -1,10 +1,10 @@
 package chap1_10.practice.q1;
 
-public class PrintBook extends Book {
+public class PrintedBook extends Book {
 
     private int pageCount;
 
-    public PrintBook(String title, String author, int pageCount) {
+    public PrintedBook(String title, String author, int pageCount) {
         super(title, author);
         this.pageCount = pageCount;
     }
