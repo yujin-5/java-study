@@ -46,7 +46,7 @@ public class SetExample {
 
         System.out.println(numbers);
 
-        // set으로 변환
+        // set으로 변환 => 중복 제거
         Set<Integer> numSet = new HashSet<>(numbers);
         System.out.println(numSet);
 
