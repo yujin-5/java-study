@@ -1,3 +1,5 @@
+package practice.hongongja;
+
 public class Hongongja {
     public static void main(String[] args) {
 
