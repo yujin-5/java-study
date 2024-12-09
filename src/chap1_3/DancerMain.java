@@ -17,7 +17,7 @@ public class DancerMain {
         Dancer kim = new Dancer();
         System.out.println("kim = " + kim);
 
-        //객체의 기능 사용 -객체 참조 => 참조연산자 "."
+        //객체의 기능 사용 = 객체 참조 -> 참조연산자 "."을 사용
         park.dancerName = "박격포";
         park.crewName = "전쟁크루";
         park.danceLevel = 1;
