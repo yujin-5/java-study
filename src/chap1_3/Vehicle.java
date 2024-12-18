@@ -11,14 +11,21 @@ public class Vehicle {
 
     //상태 속성
     //:수시로 변함
-    int cuttentSpeed; //현재 속소
+    int currentSpeed; //현재 속소
     boolean isOn; //시동 여부
 
     //컴포지션 속성
     //객체가 객체를 중첩한 형태
     /*
       {
-        owner: {}
+        company: "현대",
+        model: "포터",
+        currentSpeed: 0,
+        isOn: false,
+        owner: {
+            name: "홍길동",
+            registerDate: "2024-11-30"
+            }
       }
     */
     Owner owner;
@@ -45,14 +52,14 @@ public class Vehicle {
     //3. 주행 기능
     void accelerate(){
         System.out.printf("%s 자동차가 주행을 시작합니다.", model);
-        cuttentSpeed += 20;
-        System.out.printf("현재 속도: %dkm/h\n", cuttentSpeed);
+        currentSpeed += 20;
+        System.out.printf("현재 속도: %dkm/h\n", currentSpeed);
     }
 
     //생성자
     Vehicle(String modelName){
         model = modelName;
-        //속성(필드) = 객체 값을 세팅하기 위한 데이터
+        //속성(필드) = 변수
     }
 
 

@@ -35,5 +35,7 @@ public class DancerMain {
 
         Dancer merong = new Dancer("메롱롱","약오르지","케이팝","락킹","스트링");
         merong.introduce();
+
+//        Dancer wrong = new Dancer("원","투","케이팝","락킹","스트링",0);
     }
 }

@@ -66,4 +66,19 @@ public class Dancer {
         genres = genreList;
         danceLevel = 0;
     }
+
+//    Dancer(String dName, String cName, String...genreList, int dLevel){
+//        dancerName = dName;
+//        crewName = cName;
+//        genres = genreList;
+//        danceLevel = danceLevel;
+//    }
+
+    //가변인자가 매개변수 목록에서 맨 마지막에만 올 수 있음
+    //가변인자는 호출 시 전달된 여러 개의 값을 배열로 처리하므로,
+    // 가변인자 뒤에 다른 매개변수를 정의하면 호출 시 어떤 값이 가변인자에 속하고
+    //어떤 값이 뒤의 매개변수로 전달되는지 구분할 수 없기 때문
+
+
+
 }
